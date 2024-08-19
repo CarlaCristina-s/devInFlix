@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DevInFlix - Cadastro</title>
+</head>
+
+<body>
+  <div id="menu-hamburger">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav-hamburger" id="nav-hamburger">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+
+  <header class="container-header">
+    <nav class="container-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cadastro-page">
+    <div class="container-cadastro">
+      <h1>Cadastro de títulos</h1>
+      <form id="form-film">
+        <div class="input-container">
+          <label for="foto">Banner do filme</label>
+          <input id="foto" type="url" placeholder="Insira o link do cartaz do filme">
+          <span id="error-foto" style="color: red"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="input-container flex-basis-45">
+            <label for="nome">Título do filme</label>
+            <input id="nome" type="text" placeholder="Digite o título do filme">
+            <span id="error-nome" style="color: red"></span>
+          </div>
+
+          <div class="input-container flex-basis-20">
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+              <option value=""></option>
+              <option value="comedia">Comédia</option>
+              <option value="terror">Terror</option>
+              <option value="suspense">Suspense</option>
+              <option value="documentario">Documentário</option>
+              <option value="outros">Outros</option>
+            </select>
+            <span id="error-categoria" style="color: red"></span>
+          </div>
+
+          <div class="input-container flex-basis-20">
+            <label for="data">Data da criação</label>
+            <input id="data" type="date" />
+            <span id="error-data" style="color: red"></span>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="descricao">Crítica</label>
+          <textarea id="descricao" maxlength="250" placeholder="máximo 250 caracteres"></textarea>
+          <span id="error-descricao" style="color: red"></span>
+        </div>
+        <div class="button-container">
+          <button class="button-submit" id="button-submit" type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <footer class="footer-app">
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+
+
+  <script src="scripts/cadastro.js"></script>
+</body>
+
+</html>
