@@ -1,4 +1,4 @@
-![home-devinflix](https://github.com/user-attachments/assets/3a7682c0-4c83-4044-a6a0-03b90e2fa701)# Blog DevInFlix
+# Blog DevInFlix
 
 Blog desenvolvido durante o curso DEVinHouse, com a finalidade de treinar os conhecimentos em HTML, CSS e JavaScript.
 
